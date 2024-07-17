@@ -37,7 +37,8 @@ if __name__ == "__main__":
         json_data[employee_id] = tasks
 
     # Setup JSON file
-    filename = f'todo_all_employees.JSON'
+    filename = "todo_all_employees.json"
     with open(filename, 'w') as f:
 
         json.dump(json_data, f)
+        
