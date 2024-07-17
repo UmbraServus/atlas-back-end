@@ -29,9 +29,9 @@ if __name__ == "__main__":
         with open(f'{employee_id}.csv', 'w') as f:
 
             for task in completed_tasks:
-                csv.writer(f).writerow([
-                                        employee_id,
-                                        employee_name,
-                                        task['completed'],
-                                        task['title']
-                                        ])
+                csv.writer(f, quoting=csv.QUOTE_ALL).writerow([
+                    employee_id,
+                    employee_name,
+                    task['completed'],
+                    task['title']
+                    ])
