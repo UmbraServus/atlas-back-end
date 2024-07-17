@@ -8,7 +8,7 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: 1-export_to_CSV.py <employee_id>)")
         sys.exit(1)
-    
+
     else:
         employee_id = sys.argv[1]
 
@@ -30,12 +30,11 @@ if __name__ == "__main__":
                 'completed': task['completed'],
                 'username': employee_name
             })
-        
+
         # json data
         json_data = {employee_id: tasks}
 
         # Setup JSON file
         with open(f'{employee_id}.JSON', 'w') as f:
 
-        # write to file
             json.dump(json_data, f)
