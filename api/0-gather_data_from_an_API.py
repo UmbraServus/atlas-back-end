@@ -5,7 +5,8 @@ import sys
 
 
 def get_employee_todo_info(employee_id):
-    """ supposed to pull from an rest api and return the data in a certain format. """
+    """ supposed to pull from an rest api and
+            return the data in a certain format. """
 
     # Define Base URL/API endpoints
     base_url = 'https://jsonplaceholder.typicode.com/'
@@ -17,11 +18,12 @@ def get_employee_todo_info(employee_id):
     employee_name = employee_data['name']
     todo_data = requests.get(todos_url).json()
     total_tasks = len(todo_data)
-    completed_tasks = [task for task in  todo_data if task['completed']]
+    completed_tasks = [task for task in todo_data if task['completed']]
     done_tasks = len(completed_tasks)
 
     # prints data to std out
-    print(f"Employee {employee_name} is done with tasks({done_tasks}/{total_tasks}):")
+    print(f"Employee {employee_name} is done
+          with tasks({done_tasks}/{total_tasks}):")
 
     for task in completed_tasks:
         print(f"\t {task['title']}")
