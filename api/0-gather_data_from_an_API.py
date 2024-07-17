@@ -23,7 +23,7 @@ def get_employee_todo_info(employee_id):
 
     # prints data to std out
     print(f"Employee {employee_name} is done"
-          "with tasks({done_tasks}/{total_tasks}):")
+          f"with tasks({done_tasks}/{total_tasks}):")
 
     for task in completed_tasks:
         print(f"\t {task['title']}")
