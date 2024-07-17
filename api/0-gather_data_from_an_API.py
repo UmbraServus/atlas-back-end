@@ -15,15 +15,14 @@ def get_employee_todo_info(employee_id):
 
     # gets data from api
     employee_data = requests.get(employee_url).json()
-    employee_name = employee_data['name']
+    name = employee_data['name']
     todo_data = requests.get(todos_url).json()
     total_tasks = len(todo_data)
     completed_tasks = [task for task in todo_data if task['completed']]
     done_tasks = len(completed_tasks)
 
     # prints data to std out
-    print(f"Employee {employee_name} is done"
-          f"with tasks({done_tasks}/{total_tasks}):")
+    print(f"Employee {name} is done with tasks({done_tasks}/{total_tasks}):")
 
     for task in completed_tasks:
         print(f"\t {task['title']}")
