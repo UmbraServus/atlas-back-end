@@ -35,6 +35,7 @@ if __name__ == "__main__":
         json_data = {employee_id: tasks}
 
         # Setup JSON file
-        with open(f'{employee_id}.json', 'w') as f:
+        filename = f'{employee_id}.json'
+        with open(filename, 'w') as f:
 
             json.dump(json_data, f)
