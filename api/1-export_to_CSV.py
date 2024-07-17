@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
         # gets data from api and id from argv[1]
         employee_data = requests.get(employee_url).json()
-        employee_name = employee_data['name']
+        employee_name = employee_data['username']
         todo_data = requests.get(todos_url).json()
         completed_tasks = [task for task in todo_data if task['completed']]
 
