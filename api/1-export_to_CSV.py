@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+"""api module to gather data from a given api."""
 import requests
 import sys
 import csv
-"""api module to gather data from a given api."""
+
 
 if __name__ == "__main__":
+
     if len(sys.argv) != 2:
         print("Usage: 1-export_to_CSV.py <employee_id>)")
         sys.exit(1)
