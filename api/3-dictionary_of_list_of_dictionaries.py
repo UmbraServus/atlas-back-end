@@ -6,7 +6,6 @@ import requests
 
 if __name__ == "__main__":
 
-
     # Define Base URL/API endpoints
     base_url = 'https://jsonplaceholder.typicode.com'
     employee_url = f'{base_url}/users'
@@ -17,7 +16,7 @@ if __name__ == "__main__":
 
     json_data = {}
 
-    #get tasks for each employee
+    # get tasks for each employee
     for employee in employee_data:
         employee_id = employee['id']
         employee_name = employee['username']
