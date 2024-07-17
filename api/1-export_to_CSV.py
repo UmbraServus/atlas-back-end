@@ -28,7 +28,6 @@ if __name__ == "__main__":
         # Setup CSV file
         with open(f'{employee_id}.csv', 'w') as f:
 
-
             for task in completed_tasks:
                 csv.writer(f).writerow([
                                         employee_id,
