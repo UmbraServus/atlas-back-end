@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+"""api module to gather data from a given api."""
 import requests
 import sys
-"""api module to gather data from a given api."""
 
 
 def get_employee_todo_info(employee_id):
@@ -28,6 +28,7 @@ def get_employee_todo_info(employee_id):
 
 if __name__ == "__main__":
     """ beginning of main to use to get employee info """
+    
     if len(sys.argv) != 2:
         print("Usage: python script.py <employee_id>)")
         sys.exit(1)
