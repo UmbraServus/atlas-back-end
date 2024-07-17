@@ -27,6 +27,7 @@ def get_employee_todo_info(employee_id):
         print(f"\t {task['title']}")
 
 if __name__ == "__main__":
+    """ beginning of main to use to get employee info """
     if len(sys.argv) != 2:
         print("Usage: python script.py <employee_id>)")
         sys.exit(1)
