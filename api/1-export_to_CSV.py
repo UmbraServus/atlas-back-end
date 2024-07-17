@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """api module to gather data from a given api."""
 import csv
+import time
 import requests
 import sys
 
@@ -36,3 +37,4 @@ if __name__ == "__main__":
                     task['completed'],
                     task['title']
                     ])
+        time.sleep(1)
