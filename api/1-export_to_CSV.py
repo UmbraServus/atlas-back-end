@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """api module to gather data from a given api."""
 import csv
-import time
 import requests
 import sys
+import time
 
 
 if __name__ == "__main__":
