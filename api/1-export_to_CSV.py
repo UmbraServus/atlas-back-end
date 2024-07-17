@@ -26,7 +26,8 @@ if __name__ == "__main__":
         completed_tasks = [task for task in todo_data if task['completed']]
 
         # Setup CSV file
-        with open(f'{employee_id}.csv', 'w') as f:
+        filename = f"{employee_id}.csv"
+        with open(filename, 'w') as f:
 
             for task in completed_tasks:
                 csv.writer(f, quoting=csv.QUOTE_ALL).writerow([
