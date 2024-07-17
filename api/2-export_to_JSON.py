@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+"""api module to gather data from a given api."""
+import json
 import requests
 import sys
-import json
-"""api module to gather data from a given api."""
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
